@@ -1,0 +1,1 @@
+This folder is for putting source asset data that you don't want exposed to the public. For example, source art with layers that get exported as PNGs that the game will load.

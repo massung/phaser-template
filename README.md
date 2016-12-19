@@ -38,12 +38,11 @@ To compile your game code, simply press `Ctrl+Shift+B`, and then launch the curr
 Here's a quick breakdown of the folders and files:
 
 * `.vscode/` holds config files used by VS Code to build and run.
-* `bin/` is where your compiled game lives.
-* `bin/assets/` is where you put source data that isn't public.
-* `bin/public/data/` is where your game assets should go.
+* `assets/` is where you put private source data.
 * `phaser/` is where TypeScript descriptor files live for code completion, etc.
 * `server/` is where the Express server source code is.
 * `src/` is where your game's source code lives.
+* `www/` is where your compiled game and public data lives.
 * `main.js` is the Electron main source code file.
 * `package.json` is the Electron configuration file.
 * `tsconfig.json` is the TypeScript configuration file.

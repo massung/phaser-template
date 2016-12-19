@@ -4,7 +4,7 @@
     "version": "0.1.0",
     "command": "tsc",
     "isShellCommand": true,
-    "args": ["--out", "bin/public/js/game.js"],
-    "showOutput": "silent",
+    "args": ["--outDir", "www/public/js"],
+    "showOutput": "always",
     "problemMatcher": "$tsc"
 }
