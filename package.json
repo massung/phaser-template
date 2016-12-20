@@ -7,6 +7,7 @@
     "express": "latest",
     "browserify": "latest",
     "exorcist": "latest",
-    "tsify": "latest"
+    "tsify": "latest",
+    "mold-source-map": "latest"
   }
 }
