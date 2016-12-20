@@ -4,13 +4,7 @@ This is a template project for [Phaser](http://phaser.io/), [TypeScript](http://
 
 ## Quickstart
 
-It is assumed you have [TypeScript](http://www.typescriptlang.org/) already installed globally via [NPM](https://www.npmjs.com/). If not, simply run:
-
-```
-npm install -g typescript
-```
-
-You will also need [JakeJS](http://jakejs.com/) to build your project.
+You will need [JakeJS](http://jakejs.com/) to build your project, so make sure you have it installed...
 
 ```
 npm install -g jake
@@ -22,9 +16,11 @@ After you've [downloaded](https://github.com/massung/phaser-template/archive/mas
 phaser-template (master)$ npm install
 ```
 
-At this point, you can already launch the template as-is via Electron:
+At this point, you can already build and launch the template as-is:
 
 ```
+phaser-template (master)$ jake build
+
 phaser-template (master)$ .\node_modules\.bin\electron.cmd .
 ```
 

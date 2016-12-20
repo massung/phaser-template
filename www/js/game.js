@@ -1,4 +1,4 @@
-(function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);var f=new Error("Cannot find module '"+o+"'");throw f.code="MODULE_NOT_FOUND",f}var l=n[o]={exports:{}};t[o][0].call(l.exports,function(e){var n=t[o][1][e];return s(n?n:e)},l,l.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({"e:\\phaser-projects\\phaser-template\\src\\game.ts":[function(require,module,exports){
+(function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);var f=new Error("Cannot find module '"+o+"'");throw f.code="MODULE_NOT_FOUND",f}var l=n[o]={exports:{}};t[o][0].call(l.exports,function(e){var n=t[o][1][e];return s(n?n:e)},l,l.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({"d:\\phaser-projects\\phaser-template\\src\\game.ts":[function(require,module,exports){
 "use strict";
 var States = require("./states/states");
 var game;
@@ -15,7 +15,7 @@ function create() {
     game.state.add('boot', States.Boot);
     game.state.start('boot');
 }
-},{"./states/states":"e:\\phaser-projects\\phaser-template\\src\\states\\states.ts"}],"e:\\phaser-projects\\phaser-template\\src\\states\\boot.ts":[function(require,module,exports){
+},{"./states/states":"d:\\phaser-projects\\phaser-template\\src\\states\\states.ts"}],"d:\\phaser-projects\\phaser-template\\src\\states\\boot.ts":[function(require,module,exports){
 "use strict";
 var __extends = (this && this.__extends) || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
@@ -53,11 +53,11 @@ var Boot = (function (_super) {
     return Boot;
 }(Phaser.State));
 exports.Boot = Boot;
-},{}],"e:\\phaser-projects\\phaser-template\\src\\states\\states.ts":[function(require,module,exports){
+},{}],"d:\\phaser-projects\\phaser-template\\src\\states\\states.ts":[function(require,module,exports){
 "use strict";
 function __export(m) {
     for (var p in m) if (!exports.hasOwnProperty(p)) exports[p] = m[p];
 }
 __export(require("./boot"));
-},{"./boot":"e:\\phaser-projects\\phaser-template\\src\\states\\boot.ts"}]},{},["e:\\phaser-projects\\phaser-template\\src\\game.ts"])
+},{"./boot":"d:\\phaser-projects\\phaser-template\\src\\states\\boot.ts"}]},{},["d:\\phaser-projects\\phaser-template\\src\\game.ts"])
 //# sourceMappingURL=game.js.map
