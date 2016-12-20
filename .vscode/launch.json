@@ -31,7 +31,7 @@
             "type": "node",
             "request": "launch",
             "name": "Server",
-            "program": "${workspaceRoot}/server/server.js",
+            "program": "${workspaceRoot}/server.js",
             "cwd": "${workspaceRoot}",
             "outFiles": [],
             "sourceMaps": true

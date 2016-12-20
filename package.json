@@ -6,6 +6,7 @@
     "electron": "latest",
     "express": "latest",
     "browserify": "latest",
+    "exorcist": "latest",
     "tsify": "latest"
   }
 }

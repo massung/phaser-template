@@ -6,6 +6,5 @@
     "isShellCommand": true,
     "isBuildCommand": true,
     "args": ["build"],
-    "showOutput": "silent",
-    "problemMatcher": "$tsc"
+    "showOutput": "silent"
 }

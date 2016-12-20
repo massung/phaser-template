@@ -3,12 +3,12 @@ var express = require('express');
 var app = express();
 
 // serve static files
-app.use(express.static('www/public'));
+app.use(express.static('www'));
 
 // get the landing page
 app.get('/', function(req, res) {
     res.sendFile('index.html', {
-        root: './www/public'
+        root: './www'
     });
 });
 
