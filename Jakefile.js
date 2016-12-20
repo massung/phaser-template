@@ -22,15 +22,29 @@ let compilerOptions = {
     removeComments: true,
 };
 
+// browserify configuration
+let browserifyOptions = {
+    debug: true,
+    fullPaths: true,
+};
+
 // build task
 desc('Compile TypeScript sources and Browserify.');
 task('build', (args) => {
-    browserify({debug: true, fullPaths: true})
+    browserify(browserifyOptions)
         .add(source)
         .plugin(tsify, compilerOptions)
         .bundle()
+
+        // report any errors and stop here
         .on('error', (err) => console.error(err.toString()))
+
+        // fix up the source paths
         .pipe(mold.transformSourcesRelativeTo(outDir))
+
+        // pull out the source maps into their own file
         .pipe(exorcist(`${target}.map`))
+
+        // write the final js file
         .pipe(fs.createWriteStream(target));
 });
