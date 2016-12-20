@@ -25,8 +25,8 @@ export class Boot extends Phaser.State {
         this.logo.inputEnabled = true;
 
         // pivot about the center of the sprite
-        this.logo.anchor.set(0.5, 0.5);
-        this.logo.scale.set(0.5, 0.5);
+        this.logo.anchor.set(0.5);
+        this.logo.scale.set(0.5);
     }
 
     // ----------------------------------------------------
@@ -38,5 +38,11 @@ export class Boot extends Phaser.State {
                 .yoyo(true)
                 .start();
         }
+    }
+
+    // ----------------------------------------------------
+
+    render() {
+        this.game.debug.spriteInfo(this.logo, 10, 18);
     }
 }

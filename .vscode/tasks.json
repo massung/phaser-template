@@ -2,9 +2,10 @@
     // See https://go.microsoft.com/fwlink/?LinkId=733558
     // for the documentation about the tasks.json format
     "version": "0.1.0",
-    "command": "tsc",
+    "command": "jake",
     "isShellCommand": true,
-    "args": ["--outDir", "www/public/js"],
-    "showOutput": "always",
+    "isBuildCommand": true,
+    "args": ["build"],
+    "showOutput": "silent",
     "problemMatcher": "$tsc"
 }

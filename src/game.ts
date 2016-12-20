@@ -13,21 +13,21 @@ window.onload = main;
 // ----------------------------------------------------
 
 function main() {
-	game = new Phaser.Game(800, 600, Phaser.AUTO, 'content', {
-		preload: preload,
-		create: create,
-	});
+    game = new Phaser.Game(800, 600, Phaser.AUTO, 'content', {
+        preload: preload,
+        create: create,
+    });
 }
 
 // ----------------------------------------------------
 
 function preload() {
-	// TODO: Common source assets can be loaded here...
+    // TODO: Common source assets can be loaded here...
 }
 
 // ----------------------------------------------------
 
 function create() {
-	game.state.add('boot', States.Boot);
-	game.state.start('boot');
+    game.state.add('boot', States.Boot);
+    game.state.start('boot');
 }
