@@ -1,6 +1,6 @@
 /// <reference path="../phaser/phaser.d.ts" />
 
-import * as States from "./states/states";
+import * as States from "./states";
 
 // ----------------------------------------------------
 

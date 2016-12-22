@@ -55,8 +55,8 @@ Here's a quick breakdown of the top-level folders and files:
 Here's the `src/` folder breakdown:
 
 * `src/game.ts` is the entry point of your game.
-* `src/states/boot.ts` is a default, initial state.
-* `src/states/states.ts` imports all your states.
+* `src/boot.ts` is a default, initial state.
+* `src/states.ts` imports all your states.
 
 Here's the `www/` folder breakdown:
 
