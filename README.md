@@ -4,13 +4,13 @@ This is a template project for [Phaser](http://phaser.io/), [TypeScript](http://
 
 ## Quickstart
 
-You will need [JakeJS](http://jakejs.com/) to build your project, so make sure you have it installed...
+You will need [GulpJS](http://gulpjs.com/) globally installed to build your project, so make sure you have it:
 
 ```
-npm install -g jake
+npm install -g gulp-cli
 ```
 
-After you've [downloaded](https://github.com/massung/phaser-template/archive/master.zip) or [forked](https://github.com/massung/phaser-template) this repository, you'll need to install all the required [NodeJS](https://nodejs.org) packages used for compiling and running.
+After you've [downloaded](https://github.com/massung/phaser-template/archive/master.zip) or [forked](https://github.com/massung/phaser-template) this repository, you'll need to install all the required [NodeJS](https://nodejs.org) packages used for compiling and running it installed local to the project.
 
 ```
 phaser-template (master)$ npm install
@@ -19,7 +19,9 @@ phaser-template (master)$ npm install
 At this point, you can already build and launch the template as-is:
 
 ```
-phaser-template (master)$ jake build
+phaser-template (master)$ gulp build
+[10:40:14] Using gulpfile e:\phaser-projects\phaser-template\gulpfile.js
+[10:40:14] Starting 'build'...
 
 phaser-template (master)$ .\node_modules\.bin\electron.cmd .
 ```
@@ -48,15 +50,15 @@ Here's a quick breakdown of the top-level folders and files:
 * `assets/` is where you put source data that isn't public.
 * `src/` is where your game's source code lives.
 * `www/` is where your compiled game lives.
-* `Jakefile.js` is the Jake build script.
+* `gulpfile.js` is the gulp build script.
 * `main.js` is the Electron main source code file.
 * `server.js` is the Express server source code file.
 
 Here's the `src/` folder breakdown:
 
 * `src/game.ts` is the entry point of your game.
-* `src/boot.ts` is a default, initial state.
 * `src/states.ts` imports all your states.
+* `src/boot.ts` is a default, initial state.
 
 Here's the `www/` folder breakdown:
 

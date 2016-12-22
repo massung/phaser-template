@@ -1,4 +1,5 @@
 let fs = require('fs');
+let gulp = require('gulp');
 
 // compile to browser unified file and transform with tsc
 let browserify = require('browserify');
@@ -29,8 +30,7 @@ let browserifyOptions = {
 };
 
 // build task
-desc('Compile TypeScript sources and Browserify.');
-task('build', (args) => {
+gulp.task('build', (args) => {
     browserify(browserifyOptions)
         .add(source)
         .plugin(tsify, compilerOptions)
