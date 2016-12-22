@@ -2,6 +2,7 @@
 
 export class Boot extends Phaser.State {
     private logo: Phaser.Sprite;
+    private progress: Phaser.Line;
 
     // ----------------------------------------------------
 
@@ -27,6 +28,25 @@ export class Boot extends Phaser.State {
         // pivot about the center of the sprite
         this.logo.anchor.set(0.5);
         this.logo.scale.set(0.5);
+    }
+
+    // ----------------------------------------------------
+
+    loadUpdate() {
+        let w = this.game.canvas.width / 2;
+        let h = this.game.canvas.height / 2;
+
+        // calcluate how much progress has been made
+        let k = this.game.load.progressFloat * w / 100;
+
+        // create the progress bar
+        this.progress = new Phaser.Line(w / 2, h, w / 2 + k, h);
+    }
+
+    // ----------------------------------------------------
+
+    loadRender() {
+        this.game.debug.geom(this.progress, '#fff');
     }
 
     // ----------------------------------------------------
