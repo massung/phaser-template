@@ -1,4 +1,4 @@
-/// <reference path="../phaser/phaser.d.ts" />
+/// <reference path="../typings/index.d.ts" />
 
 import * as States from "./states";
 

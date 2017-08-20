@@ -1,4 +1,4 @@
-/// <reference path="../phaser/phaser.d.ts" />
+/// <reference path="../typings/index.d.ts" />
 
 export class Boot extends Phaser.State {
     private logo: Phaser.Sprite;
