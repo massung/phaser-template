@@ -9,7 +9,10 @@
             "request": "launch",
             "name": "Launch",
             "cwd": "${workspaceRoot}",
-            "runtimeExecutable": "${workspaceRoot}/node_modules/.bin/electron.cmd",
+            "runtimeExecutable": "${workspaceRoot}/node_modules/.bin/electron",
+            "windows": {
+                 "runtimeExecutable": "${workspaceRoot}/node_modules/.bin/electron.cmd"
+            },
             "program": "${workspaceRoot}/main.js",
             "outFiles": [],
             "sourceMaps": true
@@ -19,7 +22,10 @@
             "request": "launch",
             "name": "Debug",
             "webRoot": "${workspaceRoot}",
-            "runtimeExecutable": "${workspaceRoot}/node_modules/.bin/electron.cmd",
+            "runtimeExecutable": "${workspaceRoot}/node_modules/.bin/electron",
+            "windows": {
+                "runtimeExecutable": "${workspaceRoot}/node_modules/.bin/electron.cmd"
+            },
             "runtimeArgs": [
                 "${workspaceRoot}/main.js",
                 "--remote-debugging-port=9222"
