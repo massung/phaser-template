@@ -3,13 +3,13 @@
   "version": "1.0.0",
   "main": "main.js",
   "dependencies": {
-    "gulp": "latest",
-    "electron": "latest",
-    "express": "latest",
     "browserify": "latest",
+    "electron": "^1.7.5",
     "exorcist": "latest",
-    "typescript": "latest",
+    "express": "latest",
+    "gulp": "latest",
+    "mold-source-map": "latest",
     "tsify": "latest",
-    "mold-source-map": "latest"
+    "typescript": "latest"
   }
 }
